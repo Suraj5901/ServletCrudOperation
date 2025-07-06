@@ -17,6 +17,11 @@ import com.servlet.DatabaseHandler.EmpDBHandler;
 /**
  * Servlet implementation class AddServlet
  */
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
 public class AddServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -39,7 +44,11 @@ public class AddServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+<<<<<<< HEAD
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+=======
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
 	}
 
 	/**
@@ -48,7 +57,11 @@ public class AddServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
+<<<<<<< HEAD
 		doGet(request, response);
+=======
+//		doGet(request, response);
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
 		
 		 processRequest (request, response);
 	        

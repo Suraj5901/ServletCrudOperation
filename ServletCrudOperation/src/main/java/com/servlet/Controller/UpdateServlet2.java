@@ -30,7 +30,11 @@ public class UpdateServlet2 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+<<<<<<< HEAD
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+=======
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
 	}
 
 	/**
@@ -38,7 +42,11 @@ public class UpdateServlet2 extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+<<<<<<< HEAD
 		doGet(request, response);
+=======
+//		doGet(request, response);
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
 		
 		
 		 response.setContentType ("text/html");
@@ -54,6 +62,10 @@ public class UpdateServlet2 extends HttpServlet {
 	        int status = EmpDBHandler.update (e);
 	        if (status > 0)
 	        {
+<<<<<<< HEAD
+=======
+	        	out.print ("<p>Record updated succesfully...</p>");
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
 	         out.println ("Record updated succesfully...");
 	         response.sendRedirect ("ViewServlet");
 	        }

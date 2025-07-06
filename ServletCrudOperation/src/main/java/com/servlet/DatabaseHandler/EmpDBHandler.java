@@ -13,7 +13,11 @@ public class EmpDBHandler
         try
         {
             Class.forName ("com.mysql.cj.jdbc.Driver");
+<<<<<<< HEAD
             con =DriverManager.getConnection ("jdbc:mysql://localhost:3306/emp","root", "root");;
+=======
+            con =DriverManager.getConnection ("jdbc:mysql://localhost:3306/Suraj","root", "root");;
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
         } 
         catch (Exception e)
         {
@@ -28,7 +32,11 @@ public class EmpDBHandler
         try
         {
             Connection con = EmpDBHandler.getConnection ();
+<<<<<<< HEAD
             PreparedStatement ps =con.prepareStatement ("insert into emp(name,dept) values (?,?)");
+=======
+            PreparedStatement ps =con.prepareStatement ("insert into userDetail(name,dept) values (?,?)");
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
             ps.setString (1, e.getName ());
             ps.setString (2, e.getDept ());
             status = ps.executeUpdate ();
@@ -47,7 +55,11 @@ public class EmpDBHandler
         try
         {
             Connection con = EmpDBHandler.getConnection ();
+<<<<<<< HEAD
             PreparedStatement ps = con.prepareStatement ("update emp set name=?,dept=? where id=?");
+=======
+            PreparedStatement ps = con.prepareStatement ("update userDetail set name=?,dept=? where id=?");
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
             ps.setString (1, e.getName ());
             ps.setString (2, e.getDept ());
             ps.setInt (3, e.getId ());
@@ -67,7 +79,11 @@ public class EmpDBHandler
         try
         {
             Connection con = EmpDBHandler.getConnection ();
+<<<<<<< HEAD
             PreparedStatement ps =con.prepareStatement ("delete from emp where id=?");
+=======
+            PreparedStatement ps =con.prepareStatement ("delete from userDetail where id=?");
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
             ps.setInt (1, id);
             status = ps.executeUpdate ();
             con.close ();
@@ -85,7 +101,11 @@ public class EmpDBHandler
         try
         {
             Connection con = EmpDBHandler.getConnection ();
+<<<<<<< HEAD
             PreparedStatement ps =con.prepareStatement ("select * from emp where id=?");
+=======
+            PreparedStatement ps =con.prepareStatement ("select * from userDetail where id=?");
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
             ps.setInt (1, id);
             ResultSet rs = ps.executeQuery ();
             if (rs.next ())
@@ -109,7 +129,11 @@ public class EmpDBHandler
         try
         {
             Connection con = EmpDBHandler.getConnection ();
+<<<<<<< HEAD
             PreparedStatement ps = con.prepareStatement ("select * from emp");
+=======
+            PreparedStatement ps = con.prepareStatement ("select * from userDetail");
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
             ResultSet rs = ps.executeQuery ();
             while (rs.next ())
          {

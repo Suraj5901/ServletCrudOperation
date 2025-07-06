@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+<<<<<<< HEAD
   <servlet>
     <description></description>
     <display-name>Reportservlet</display-name>
@@ -12,6 +13,13 @@
   </servlet-mapping>
   <display-name>ServletCrudOperation</display-name>
   <welcome-file-list>
+=======
+  
+  
+  <display-name>ServletCrudOperation</display-name>
+  <welcome-file-list>
+  	<welcome-file>Index.html</welcome-file>
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>

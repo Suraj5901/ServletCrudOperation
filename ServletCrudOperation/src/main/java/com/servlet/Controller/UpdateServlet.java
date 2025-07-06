@@ -30,7 +30,11 @@ public class UpdateServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+<<<<<<< HEAD
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+=======
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
+>>>>>>> bc6f1f5 (Servlet Crud Operation completed)
 		
 		 response.setContentType("text/html");  
 	        PrintWriter out=response.getWriter();  
